@@ -2,14 +2,16 @@ import React,{ Component } from "react"
 import '../index.css'
 
 class Welcome extends Component {
-  
-  render() {
+
+render() {
   return (
   <div>
-  <h1>
-    welcome to the 
-  </h1>
-  <h2>foodhub</h2>
+   <h1>
+     welcome to the 
+   </h1>
+   <h2>
+     foodhub
+    </h2>
   </div>
   )}}
 export default Welcome
