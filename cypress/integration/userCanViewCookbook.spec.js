@@ -10,9 +10,8 @@ describe('User can view cookbook', () => {
   })
   it('Successfully view My Cookbook in the Navbar', () => {
     cy.loginUser('user@mail.com', 'password')
-    cy.get('#navbar')
-    .within(() => {
-      cy.get('#nav-cookbook').click()
+    cy.get('#navbar').within(() => {
+      cy.get('#nav-cookbook').click({ force: true })
       cy.get('h1').should('contain','My Cookbook')
     }),
 

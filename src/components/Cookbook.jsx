@@ -27,10 +27,10 @@ class Cookbook extends Component {
 
 
     return (
-      <div>
+     <>
         <h1>My Cookbook</h1>
         {favorite}
-      </div>
+     </>
     )
   }
 }
