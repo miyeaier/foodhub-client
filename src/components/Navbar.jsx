@@ -42,6 +42,7 @@ class Navbar extends Component {
         />
       )
       cookbook = (
+<<<<<<< HEAD
       <Menu.Item id='nav-cookbook' as={NavLink} to='/recipes/favorite'>
 
           <Cookbook
@@ -49,6 +50,13 @@ class Navbar extends Component {
          />
 
       </Menu.Item>
+=======
+        <Menu.Item id='nav-cookbook' as={NavLink} to='/cookbook'>
+          <Header position='right'>
+            My Cookbook
+          </Header>
+        </Menu.Item>
+>>>>>>> 13040645f602adfff53c9fc93d2d7c37967e12cc
       )
       
       createRecipe = (

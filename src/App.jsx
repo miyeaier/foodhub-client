@@ -7,6 +7,7 @@ import WelcomePage from './components/WelcomePage'
 import RecipeCU from './components/RecipeCU'
 import Navbar from './components/Navbar'
 import Logout from './components/Logout'
+import Cookbook from './components/Cookbook'
 import { generateRequireSignInWrapper } from 'redux-token-auth'
 import { connect } from 'react-redux'
 import SignUp from './components/SignUp'
@@ -32,10 +33,8 @@ class App extends Component {
           <Route exact path='/login' component={Login}>
             {this.props.currentUser.isSignedIn ? <Redirect to="/" /> : <Login />}
           </Route>
-          <Route exact path='/logout' component={Logout}>
-            {this.props.currentUser.isSignedIn === false ? <Redirect to="/" /> : <Logout />}
-          </Route>
           <Route exact path="/recipes/create" component={requireSignIn(RecipeCU)} />
+          <Route exact path="/cookbook" component={requireSignIn(Cookbook)} />
       </>
     )
   }

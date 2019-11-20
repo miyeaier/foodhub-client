@@ -1,17 +1,16 @@
 { 
-  "favorite":
-  [
-    {
-      "id": 1,  
-      "title": "Quiche", 
-      "ingredients": "Eggs", 
-      "directions": "Stir the mixture"
-    },
-    {
-      "id": 2,
-      "title": "Chocolate Croissant", 
-      "ingredients": "Creme", 
-      "directions": "Bake in the oven"
-    } 
-  ]
+  "cookbook": {
+    "cookbook_recipes": [
+      {
+        "id": 1,  
+        "title": "Quiche", 
+        "user_name": "Bob"
+      },
+      {
+        "id": 2,
+        "title": "Chocolate Croissant", 
+        "user_name": "Ingvar"
+      } 
+    ]
+  }
 }
